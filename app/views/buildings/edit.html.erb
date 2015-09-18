@@ -1,0 +1,32 @@
+<h1>edit building</h1>
+
+<%= form_for @building do |form| %>
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+  <div class="field">
+    <%= form.label :use %>
+    <%= form.text_field :use %>
+  </div>
+  <div class="field">
+    <%= form.label :material %>
+    <%= form.text_field :material %>
+  </div>
+  <div class="field">
+    <%= form.label :architect %>
+    <%= form.text_field :architect %>
+  </div>
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image %>
+  </div>
+  <div class="action">
+    <%= form.submit 'Update' %>
+  </div>
+
+<% end %>

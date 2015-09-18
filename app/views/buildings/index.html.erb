@@ -1,0 +1,7 @@
+ 
+<div class="container">
+ <% @buildings.each do |building| %>
+    <div class="building"> <%= link_to building.location, building_path(building .id) %></div>
+  <% end %>
+
+</div>

@@ -1,0 +1,19 @@
+<h1>this is the show page</h1>
+
+
+<%= @building.status %>
+<%= @building.use %>
+<%= image_tag(@building.image) %>
+<%= @building.material %>
+<%= @building.architect %>
+
+
+
+<% @review.each do |review| %>
+  <%= review.rating %>
+  <%= review.content %>
+  <%= review.design %>
+<% end %>
+
+<%= link_to 'Edit', edit_building_path(@building) %>
+<%= link_to 'Delete', @building, method: :delete, data: { confirm: "Are you sure?" } %>
