@@ -33,8 +33,8 @@ class BuildingsController < ApplicationController
   def update
     building = Building.find(params[:id])
 
-    if Building.update!(building_params)
-      redirect_to building_path
+    if building.update(building_params)
+      redirect_to building
     else
       render :edit
     end
