@@ -7,6 +7,7 @@ class ReviewsController < ApplicationController
 
   def new
     @review = Review.new
+    @building = Building.find(params[:building_id])
   end
 
   def create

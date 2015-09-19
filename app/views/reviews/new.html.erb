@@ -1,14 +1,11 @@
 <h1>add a new review</h1>
 
-<%= form_for @review do |form| %>
+<%= form_for [@building, @review] do |form| %>
   <div class="field">
     <%= form.label :content %>
-    <%= form.text_field :content %>
+    <%= form.text_area :content %>
   </div>
-  <div class="field">
-    <%= form.label :rating %>
-    <%= form.text_field :rating %>
-  </div>
+
 
   <div class="field">
     <%= form.label :design %>
@@ -17,6 +14,14 @@
 
   <div class="action">
     <%= form.submit 'New review' %>
+  </div>
+
+  <div class="field">
+    <%= radio_button_tag(:rating, 1) %>
+    <%= radio_button_tag(:rating, 2) %>
+    <%= radio_button_tag(:rating, "1-5") %>            
+    <%= radio_button_tag(:rating, "1-5") %>
+    <%= radio_button_tag(:rating, "1-5") %>
   </div>
 
 <% end %>
