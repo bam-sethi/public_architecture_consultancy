@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>PublicArchitecture</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <script async defer
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB2g-ypBdo7GOCo5z8cbol3SZu5BP4NUA&callback=initMap">
   </script>
-</head>
-<body>
-<h1><%= link_to "REDESIGNTHECITYMOTHERFUCKERS", buildings_path %></h1>
+  </head>
+
+  <body>
+<h1><%= link_to "CITY PLANNER", buildings_path %></h1>
+  <%= link_to 'MAP', map_path %>
+    <%= yield %>
 
 
-<%= yield %>
-
-
-</body>
+  </body>
 </html>

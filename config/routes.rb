@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   get '/' => 'buildings#index'
   
+
+  get '/map' => 'maps#index'
+
   resources :buildings do
     resources :reviews
   end

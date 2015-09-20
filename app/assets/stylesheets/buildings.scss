@@ -1,0 +1,21 @@
+body {
+  background-color: grey;
+  color: black;
+  background: url("http://i.imgur.com/o9sRF9i.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#map { 
+  height: 500px;
+       
+}
+.field {
+  background-color: rgba(41, 203, 92, 0.1);
+}
+
+.cover-image{
+  width: 100px;
+  height: 300px;
+}

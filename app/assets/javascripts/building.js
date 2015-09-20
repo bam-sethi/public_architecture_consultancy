@@ -1,12 +1,25 @@
 var map;
+
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 51.5072, lng: 0.1275},
-    zoom: 11
+  var myLatLng = {lat: 51.5072, lng: 0.1275};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: myLatLng
   });
 
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+
+
 map.setOptions({styles: styles});
+
 }
+
+
 
 
 

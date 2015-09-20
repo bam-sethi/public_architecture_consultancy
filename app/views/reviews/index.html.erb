@@ -1,1 +1,7 @@
 <h1>reviewssssss</h1>
+<% @review.each do |review| %>
+<div class="field"><%= review.content %></div>
+<div class="field"><%= review.rating %></div>
+<div class="field"><%= image_tag(review.image) %></div>
+
+<% end %>

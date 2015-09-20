@@ -15,7 +15,7 @@ class ReviewsController < ApplicationController
     
     if review.save 
       flash[:notice] = 'review created successfully!'
-      redirect_to review
+      redirect_to "/buildings/#{params[:building_id]}/reviews/#{params[:id]}"
     else
       flash.now[:error] = "Error: #{review.errors.full_messages}"
       render :new
@@ -23,12 +23,15 @@ class ReviewsController < ApplicationController
 
   end
 
-
+  def show 
+    @building = Building.find(params[:id])
+    @review = @building.reviews
+  end
 
 
   private
     def review_params
-      params.require(:review).permit(:content, :rating, :design)
+      params.require(:review).permit(:content, :rating, :image)
     end
 
 

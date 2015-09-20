@@ -1,18 +1,19 @@
 <h1>this is the show page</h1>
 
-
-<%= @building.status %>
-<%= @building.use %>
-<%= image_tag(@building.image) %>
-<%= @building.material %>
-<%= @building.architect %>
+<div class="field"><%= @building.status %></div>
+<div class="field"><%= @building.use %></div>
+<div class="field"><%= image_tag(@building.image) %></div>
+<div class="field"><%= @building.material %></div>
+<div class="field"><%= @building.architect %></div>
 
 
 
 <% @review.each do |review| %>
-  <%= review.rating %>
-  <%= review.content %>
-  <%= review.design %>
+<div class="field"> <%= review.rating %></div>
+<div class="field">  <%= review.content %></div>
+<div class="field" id="image"><%= image_tag(review.image) %></div>
+<div class="field"> <%= truncate(review.content, length: 300) { link_to 'read more', building_review_path(@building, review.id) } %></div>
+
 <% end %>
 
 <%= link_to 'Edit', edit_building_path(@building) %>

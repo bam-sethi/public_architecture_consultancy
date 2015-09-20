@@ -1,13 +1,11 @@
  
-<div class="container">
+<ul class="small-block-grid-3">
  <% @buildings.each do |building| %>
-    <div class="building"> <%= link_to building.location, building_path(building .id) %></div>
+          <li class="cover-image"><%= link_to image_tag(building.image), building_path(building .id) %></li>
   <% end %>
 
-</div>
+</ul>
 
 
-
-<div id="map"></div>
 
 
