@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
 
-  get '/' => 'buildings#index'
+  root 'buildings#index'
   
 
   get '/map' => 'maps#index'
-  get '/home' => 'likes#create' 
+  # get '/like/:building_id/:suggestion_id' => 'likes#create', as: 'like'
   
   resources :buildings do
     resources :reviews
-    resources :suggestions 
+    resources :suggestions do
+      resources :likes, only: [:create]
+    end
   end
 
 

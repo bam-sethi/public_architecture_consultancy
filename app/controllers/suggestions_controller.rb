@@ -3,6 +3,7 @@ class SuggestionsController < ApplicationController
 
   def index
     @suggestions = Suggestion.all
+
   end
 
 
@@ -13,9 +14,9 @@ class SuggestionsController < ApplicationController
 
   def create
     suggestion = Suggestion.new(suggestion_params)
+    suggestion.building = Building.find(params[:building_id])
     if suggestion.save
-binding.pry
-      redirect_to "/buildings/#{params[:building_id]}/suggestions/#{params[:id]}"
+      redirect_to building_suggestion_path(params[:building_id], suggestion)
     else
       render :new
     end

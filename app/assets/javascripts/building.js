@@ -403,3 +403,4 @@ var styles = [
   }
 ]
 
+window.addEventListener('load', initMap)

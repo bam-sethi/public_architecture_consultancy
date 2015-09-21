@@ -1,1 +1,9 @@
-<h1>hi</h1>
+<ul>
+<% @suggestions.each do |suggestion| %>
+
+<li><%= suggestion.suggestion_content %> | <%= image_tag("like.png", class: "like-button") %></li>
+
+<li class="building-id"><%= suggestion.building_id %></li>
+<% end %>
+
+</ul>
