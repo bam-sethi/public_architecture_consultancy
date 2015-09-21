@@ -1,0 +1,10 @@
+<%= form_for [@building, @suggestion] do |f| %>
+
+  <div class="field"><%= f.label :suggestion_content %></div>
+  <div class="field"><%= f.text_area :suggestion_content %></div>
+
+  <div class="action">
+    <%= f.submit 'Add Suggestion' %>
+  </div>
+
+<% end %>

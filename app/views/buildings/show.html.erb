@@ -3,6 +3,7 @@
 <li><%= link_to 'Edit', edit_building_path(@building) %></li>
 <li><%= link_to 'Delete', @building, method: :delete, data: { confirm: "Are you sure?" } %></li>
 <li><%= link_to 'Add a Review', new_building_review_path(@building) %></li>
+<li><%= link_to 'Add a Suggestion', new_building_suggestion_path(@building) %></li>
 </ul>
 <div class="field"><%= @building.status %></div>
 <div class="field"><%= @building.use %></div>
@@ -17,6 +18,11 @@
 <div class="field">  <%= review.content %></div>
 <div class="field"><%= image_tag(review.image) %></div>
 <div class="field"> <%= truncate(review.content, length: 300) { link_to 'read more', building_review_path(@building, review.id) } %></div>
+
+
+
+
+
 
 <% end %>
 

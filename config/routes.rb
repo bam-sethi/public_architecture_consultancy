@@ -4,12 +4,14 @@ Rails.application.routes.draw do
   
 
   get '/map' => 'maps#index'
-
+  get '/home' => 'likes#create' 
+  
   resources :buildings do
     resources :reviews
+    resources :suggestions 
   end
 
-  # get '/building_'
+
 
 
 

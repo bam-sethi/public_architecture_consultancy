@@ -1,0 +1,7 @@
+
+<% @suggestions.each do |suggestion| %>
+
+<%= suggestion.suggestion_content %>
+<%= image_submit_tag("like.png", class: "like-button") %>
+  
+<% end %>
