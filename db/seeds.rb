@@ -7,12 +7,13 @@
 #   Mayor.create(name: \'Emanuel\', city: cities.first)
 
 
-b1 = Building.create!(location: 'London Bridge', status: 'Almost a year after it opened at a cost of £500 million, the building’s only occupants are a restaurant on the 32nd floor and a viewing gallery on the upper five floors, which offers visitors stunning views of the capital for £25. Not a single office in the 26 floors devoted to business use has been rented.', use: 'mixed', image: 'http://19gntp3rhlaj2031ac3inj421akm.wpengine.netdna-cdn.com/wp-content/uploads/Jitesh-Patel-illustration-V2-The-Shard.jpg', material: '11,000 glass panels', architect: 'Renzo Piano', latitude:  0.0865, longitude: 51.5045)
+b1 = Building.create!(location: 'London Bridge', status: 'Almost a year after it opened at a cost of £500 million, the building’s only occupants are a restaurant on the 32nd floor and a viewing gallery on the upper five floors, which offers visitors stunning views of the capital for £25. Not a single office in the 26 floors devoted to business use has been rented.', use: 'mixed', image: 'http://19gntp3rhlaj2031ac3inj421akm.wpengine.netdna-cdn.com/wp-content/uploads/Jitesh-Patel-illustration-V2-The-Shard.jpg', material: '11,000 glass panels', architect: 'Renzo Piano', latitude:  0.0865, longitude: 51.5045, full_street_address: '32 London Bridge St, London SE1 9SG')
 
 
 
 b2 = Building.create!(location: 'Elephant and Castle', status: 'empty', use: 'none', image: 'https://i.imgur.com/OLrW8n7.png', material: 'wtf? glass and shit', architect: 'a hippo', longitude: 0.0865, latitude: 51.5045)
-b3 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'https://www.randstad.co.uk/ugc/found/london-skyline/images/buildings/walkie-talkie.png', material: 'brick', architect: 'Piano', longitude: 0.0865, latitude: 51.5045)
+
+b3 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'https://www.randstad.co.uk/ugc/found/london-skyline/images/buildings/walkie-talkie.png', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
 
 b1.reviews.create!(content:'This tower is anarchy. It conforms to no planning policy. It marks no architectural focus or rond-point. It offers no civic forum or function, just luxury flats and hotels. It stands apart from the City cluster and pays no heed to its surrounding context in scale, materials or ground presence. It seems to have lost its way from Dubai to Canary Wharf.
 The Shard was furiously opposed by local people, by Southwark council and by historic buildings and conservation authorities. It was pushed as a symbol of Britain’s love affair with financial bling at the turn of the 21st century, with ‘iconic’ celebrities and the eff-you greed of arbitrage. It was allowed to go ahead by John Prescott as a single-finger gesture in the face of wimpish southerners.
@@ -110,3 +111,25 @@ So what to do about these unfortunate towers? Worryingly, the competition for al
 20 Fenchurch Street, on the other hand, has already had to be substantially altered, because the glass on its overhanging cap was creating a  \'death-ray \' effect, credited with melting some unfortunate stockbroker\'s Jaguar. The semi-public  \'sky garden \', which was a condition of planning permission, is apparently to be redesigned after being widely lambasted as an utterly pathetic collection of shrubbery. But the awfulness of the building is completely inherent and unavoidable – while you can probably hang all sorts of things from the Tour Montparnasse/\'s subtly curved frame, should you want to, the frame of Viñoly/\'s tower is itself the problem, the totally arbitrary, goofy and shoulder-padded bulk of the thing.
 
 Apart from being reopened as a Museum of Finance Capitalism, where animatronic brokers could yell at each other through concealed microphones and trading floors could be repurposed to exhibit the suffering of foreclosed home owners and  \'decanted \' council tenants, it/\'s hard to imagine any possible fate for it. Londoners will just have to put up with 20 Fenchurch Street, and theyll have to create some sort of instrument – legal or otherwise – to stop it from happening again. ')
+
+
+s1 = Suggestion.create!(suggestion_content:'Should be blah', building_id: b1.id)
+s2 = Suggestion.create!(suggestion_content:'Should be a different kind of blah', building_id: b2.id)
+
+s1.likes.create!(number_of_likes: 3, building_id: b1.id)
+s2.likes.create!(number_of_likes: 5, building_id: b2.id)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

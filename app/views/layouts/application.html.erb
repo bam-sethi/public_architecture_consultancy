@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "building review" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -16,10 +16,14 @@
   </head>
 
   <body>
-<h1><%= link_to "CITY PLANNER", buildings_path %></h1>
-  <%= link_to 'MAP', map_path %>
-    <%= yield %>
+<!--   <%= image_tag("sky.jpg", :class => "typography-image", :alt => "typography-image") %>
+ -->
 
+      <h1><%= link_to "CITYREVIIEWWW", buildings_path %></h1>
+      <%= link_to 'MAP', map_path %>
+
+    <%= yield %>
 
   </body>
 </html>
+
