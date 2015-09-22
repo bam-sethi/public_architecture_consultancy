@@ -1,0 +1,43 @@
+body {
+  background-color: grey;
+  color: black;
+/*background: url("sky.jpg") no-repeat center center fixed; */
+  background: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text_align: center; 
+}
+
+#map { 
+  height: 500px;
+       
+}
+.field {
+  background-color: rgba(41, 203, 92, 0.1);
+}
+
+.small-block-grid-4 {
+  border: 1px solid black;
+  display: inline-block;
+  width: 100%;
+}
+
+li {
+  display: inline-block;
+  width: 20%;
+  border-bottom: 10px solid black;
+}
+.building-image{
+  display: inline-block;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: -10px;
+  padding-bottom: -10px;
+}
+
+.index-container {
+  border: 10px solid black;
+
+}
