@@ -25,7 +25,8 @@ class ReviewsController < ApplicationController
   end
 
   def show 
-    @building = Building.find(params[:id])
+    @building = Building.find(params[:building_id])
+    # binding.pry
     @reviews = @building.reviews
   end
 

@@ -1,0 +1,14 @@
+#suggestion-link{
+  background-color: hotpink;
+}
+
+.likes{
+  color:rgb(178,34,34);
+  font-size: 30px;
+  float: middle;
+}
+
+#likes-list{
+  color:rgb(250,128,114);
+  font-size: 25px;
+}

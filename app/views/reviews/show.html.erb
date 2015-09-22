@@ -1,4 +1,5 @@
-<div class="review-field" id="review-all"><%= @review %>
+<div class="review-field" id="review-all">
+<%= @review %>
 <% @reviews.each do |review| %>
   <p id="review-para"><%= review.content %></p>
 <% end %>

@@ -9,7 +9,7 @@ class LikesController < ApplicationController
   def create
     building = Building.find(params[:building_id])
     suggestion = Suggestion.find(params[:suggestion_id])
-    
+    # if element doesn't exist create it
     like = Like.find_or_create_by(building_id: building.id, suggestion_id: suggestion.id)
     like.number_of_likes += 1
             

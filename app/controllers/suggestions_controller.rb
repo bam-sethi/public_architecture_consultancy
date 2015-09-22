@@ -5,6 +5,8 @@ class SuggestionsController < ApplicationController
     # @suggestions = Suggestion.all
     @building = Building.find(params[:building_id])
     @suggestions = Suggestion.where(building: @building)
+    # binding.pry
+    # @Like = Like.all
   end
 
 
@@ -24,6 +26,7 @@ class SuggestionsController < ApplicationController
   end
 
   def show
+    @building = Building.find(params[:building_id])
     @suggestion = Suggestion.find(params[:id])
   end
 

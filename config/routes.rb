@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
 
   root 'buildings#index'
-  
-
   get '/map' => 'maps#index'
-  # get '/like/:building_id/:suggestion_id' => 'likes#create', as: 'like'
+
   
   resources :buildings do
     resources :reviews

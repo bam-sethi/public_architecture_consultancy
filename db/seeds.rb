@@ -21,6 +21,11 @@ b5 = Building.create!(location: 'South Bank', status: '£70 million', use: 'Tour
 b6 = Building.create!(location: 'City of London', status: '£138 million (plus land cost of £90.6 million', use: 'Commercial', image: 'gherkin.jpg', material: 'bricks', architect: 'Foster and Partners', longitude: -0.083611, latitude: 51.511389, full_street_address: '30 St Mary Axe, London, EC3A 8EP')
 
 
+b6.reviews.create!(content: "My b-i-l works here, I was in town for a meeting at the baltic exchange (next door) so we thought we'd have a drink and a bite to eat in the bar at the top (i'd never been here). He'd booked. We were 10 minutes late, but no one took the blindest bit of notice of us when we walked in! So we hung around, whilst I marvelled at how sparse and unattractive everything was - terrible perspex chairs and black furniture - you know, like your brother had in his bedroom in the 80's. Eventually someone acknowledged us - but the kitchen closes in 5 minutes - so we had to order quickly whilst standing at the top of the stairs! 
+All very expensive, and terrible chips (Anyone who reads my restaurant reviews knows I have a thing about chips)! His lunch was nice - pork belly, but a small portion, and £17.50. 4 glasses of prosecco, a portion of chips and his lunch came to £62! I couldn't work out why it was so much, and we had already discussed not leaving a tip, as the service had been so poor (we had to wave to get attention - I was on the verge of shouting yoo-hoo at one point!) - but the reason why it was so much was because they'd added a £6.97 discretionary tip. 
+Disgraceful. The beef salad I'd had at the Baltic exchange was by far a more pleasant experience (which I'm glad of, otherwise I would have had to suffer a full meal here).
+Don't bother unless you're desperate to enjoy the view and have plenty of cash burning a hole in your pocket.")
+
 b1.reviews.create!(content:'This tower is anarchy. It conforms to no planning policy. It marks no architectural focus or rond-point. It offers no civic forum or function, just luxury flats and hotels. It stands apart from the City cluster and pays no heed to its surrounding context in scale, materials or ground presence. It seems to have lost its way from Dubai to Canary Wharf.
 The Shard was furiously opposed by local people, by Southwark council and by historic buildings and conservation authorities. It was pushed as a symbol of Britain’s love affair with financial bling at the turn of the 21st century, with ‘iconic’ celebrities and the eff-you greed of arbitrage. It was allowed to go ahead by John Prescott as a single-finger gesture in the face of wimpish southerners.
 There is no case for buildings like this on grounds of urban density. Their space ratios make them costly and inefficient to service. Any Londoner knows there are thousands of acres of unused and underused land within the M25 awaiting the high-density, low-rise building preferred by the property market.
@@ -200,8 +205,19 @@ The Shard is a stupid building. I’m not against it because it’s tall, althou
 
 b6.reviews.create!(content:"")
 
-s1 = Suggestion.create!(suggestion_content:'Should be blah', building_id: b1.id)
-s2 = Suggestion.create!(suggestion_content:'Should be a different kind of blah', building_id: b2.id)
+s1 = Suggestion.create!(suggestion_content:'Should be a public library', building_id: b1.id)
+s2 = Suggestion.create!(suggestion_content:'Dynamite it', building_id: b2.id)
+s3 = Suggestion.create!(suggestion_content:'Should be turned in to a giant wheel and rolled to Hull.', building_id: b5.id)
+s4 = Suggestion.create!(suggestion_content:'Turned in to a giant greenhouse', building_id: b1.id)
+s5 = Suggestion.create!(suggestion_content:'Turn it in to a homeless shelter', building_id: b1.id)
+s6 = Suggestion.create!(suggestion_content:'Should be edible', building_id: b6.id)
+s7 = Suggestion.create!(suggestion_content:'Turn it into social housing', building_id: b6.id)
+s8 = Suggestion.create!(suggestion_content:'Should be a research center for the continuing search for Extra Terrestial Life', building_id: b3.id)
+s10 = Suggestion.create!(suggestion_content:'Permamently reinstated as a car melting laser', building_id: b3.id)
+s11 = Suggestion.create!(suggestion_content:'Give it to meee', building_id: b5.id)
+s12= Suggestion.create!(suggestion_content:'Social Housing', building_id: b2.id)
+s13 = Suggestion.create!(suggestion_content: 'Should be demolished', building_id: b4.id)
+s14 = Suggestion.create!(suggestion_content:'Turned in to a refugee center', building_id: b2.id)
 
 # s1.likes.create!(number_of_likes: 3, building_id: b1.id)
 # s2.likes.create!(number_of_likes: 5, building_id: b2.id)

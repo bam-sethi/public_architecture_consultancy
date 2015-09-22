@@ -1,33 +1,14 @@
-<!-- <h1>this is the show page</h1>
 
-<ul>
-<div class="field"><%= link_to 'SUGGESTIONS', building_suggestions_path(@building.id) %></div>
-<li><%= link_to 'Edit', edit_building_path(@building) %></li>
-<li><%= link_to 'Delete', @building, method: :delete, data: { confirm: "Are you sure?" } %></li>
-<li><%= link_to 'Add a Review', new_building_review_path(@building) %></li>
-<li><%= link_to 'Add a Suggestion', new_building_suggestion_path(@building) %></li>
-</ul>
- -->
+<div id="nav-container">
+  <ul>
+    <li id="nav"><%= link_to 'Suggestions', building_suggestions_path(@building.id), class: "nav-link" %></li>
+    <li id="nav"><%= link_to 'Edit', edit_building_path(@building), class: "nav-link" %></li>
+    <li id="nav"><%= link_to 'Delete', @building, method: :delete, data: { confirm: "Are you sure?" }, class: "nav-link" %></li>
+    <li id="nav"><%= link_to 'Add a Review', new_building_review_path(@building), class: "nav-link" %></li>
+    <li id="nav"><%= link_to 'Add a Suggestion', new_building_suggestion_path(@building), class: "nav-link" %></li>
+  </ul>
+</div>
 
-<!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><%= link_to 'SUGGESTIONS', building_suggestions_path(@building.id) %></li>
-  <li><%= link_to 'Add a Review', new_building_review_path(@building) %></li>
-  <li><%= link_to 'Add a Suggestion', new_building_suggestion_path(@building) %></li>
-  <li><%= link_to 'Edit', edit_building_path(@building) %></li>
-  <li class="divider"></li>
-  <li><a href="#!"><%= link_to 'Delete', @building, method: :delete, data: { confirm: "Are you sure?" } %></li>
-</ul>
-
-<nav>
-  <div class="nav-wrapper">
-    <a href="#!" class="brand-logo">BLABLABUILDING</a>
-    <ul class="right hide-on-med-and-down">
-      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">OPTIONS<i class="material-icons right"> </i></a></li>
-    </ul>
-  </div>
-</nav>
 
 
   <div class="row">
@@ -40,7 +21,7 @@
   <h5>Address:</h5><%= @building.full_street_address %>
   <h5>Current Use:</h5><%= @building.use %>
   <h5>Building Material:</h5><%= @building.material %>
-  <h5>Cost:</h3><%= @building.status %>
+  <h5>Cost:</h5><%= @building.status %>
 </div>
 
 <div id="reviews">
@@ -48,7 +29,7 @@
   <% @review.each do |review| %>
 <!--   <div class="field"><%= image_tag(review.image) %></div> -->
     <!-- <div class="col s6 offset-s6 grid-example"> -->
-      <p><span class="flow-text" id="review-snippet"><%= truncate(review.content, length: 250) { link_to 'read more', building_review_path(@building, review) } %></span></p>
+      <p><span class="flow-text" id="review-snippet"><%= truncate(review.content, length: 250) { link_to 'read more', building_review_path(@building, review.id) } %></span></p>
       <hr>
     <!-- </div> -->
   <% end %>

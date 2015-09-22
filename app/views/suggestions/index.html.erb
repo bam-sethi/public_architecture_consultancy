@@ -2,10 +2,11 @@
   <ul>
     <% @suggestions.each do |suggestion| %>
       <li data-building-id="<%= suggestion.building.id %>" data-suggestion-id="<%= suggestion.id %>" id="individual-like"><%= suggestion.suggestion_content %><br> 
-      <%= image_tag("like.png", class: "like-button") %> | <span class="likes"><%= suggestion.number_of_likes %></span></li>
+      <%= image_tag("like.png", class: "like-button") %>  <span class="likes"><%= suggestion.number_of_likes %></span></li>
     <% end %>
   </ul>
 </div>
+
 
 
 <div id="building-like">
