@@ -10,6 +10,7 @@ body {
   text_align: center; 
 }
 
+
 #map { 
   height: 500px;
        
@@ -18,13 +19,16 @@ body {
   background-color: rgba(41, 203, 92, 0.1);
 }
 
+/*Index Page Buildings Display*/
 .small-block-grid-4 {
-  border: 1px solid black;
+/*  border: 1px solid black;*/
   display: inline-block;
   width: 100%;
+/*  overflow: hidden;
+  height:200px;*/
 }
 
-li {
+.buildings-li{
   display: inline-block;
   width: 20%;
   border-bottom: 10px solid black;
@@ -37,7 +41,3 @@ li {
   padding-bottom: -10px;
 }
 
-.index-container {
-  border: 10px solid black;
-
-}

@@ -1,4 +1,5 @@
 <h1>this is the show page</h1>
+
 <ul>
 <div class="field"><%= link_to 'SUGGESTIONS', building_suggestions_path(@building.id) %></div>
 <li><%= link_to 'Edit', edit_building_path(@building) %></li>
@@ -8,7 +9,7 @@
 </ul>
 <div class="field"><%= @building.status %></div>
 <div class="field"><%= @building.use %></div>
-<div class="field"><%= image_tag(@building.image, class: "image-tag") %></div>
+<div class="image"><%= image_tag(@building.image, class: "image-tag") %></div>
 <div class="field"><%= @building.material %></div>
 <div class="field"><%= @building.architect %></div>
 

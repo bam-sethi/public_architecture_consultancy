@@ -15,6 +15,9 @@ b2 = Building.create!(location: 'Elephant and Castle', status: 'empty', use: 'no
 
 b3 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'https://www.randstad.co.uk/ugc/found/london-skyline/images/buildings/walkie-talkie.png', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
 
+
+
+
 b1.reviews.create!(content:'This tower is anarchy. It conforms to no planning policy. It marks no architectural focus or rond-point. It offers no civic forum or function, just luxury flats and hotels. It stands apart from the City cluster and pays no heed to its surrounding context in scale, materials or ground presence. It seems to have lost its way from Dubai to Canary Wharf.
 The Shard was furiously opposed by local people, by Southwark council and by historic buildings and conservation authorities. It was pushed as a symbol of Britain’s love affair with financial bling at the turn of the 21st century, with ‘iconic’ celebrities and the eff-you greed of arbitrage. It was allowed to go ahead by John Prescott as a single-finger gesture in the face of wimpish southerners.
 There is no case for buildings like this on grounds of urban density. Their space ratios make them costly and inefficient to service. Any Londoner knows there are thousands of acres of unused and underused land within the M25 awaiting the high-density, low-rise building preferred by the property market.
