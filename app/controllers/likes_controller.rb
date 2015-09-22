@@ -1,8 +1,5 @@
 class LikesController < ApplicationController
   
-  # respond_to :html, :js
-
-
   def new
     @like = Like.new
     @suggestions = Suggestion.all

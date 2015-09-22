@@ -1,4 +1,6 @@
 <h1>hi rview</h1>
 
-<div class="field"><%= [@building, @review] .content %></div>
-
+<div class="field"><%= @review %></div>
+<% @reviews.each do |review| %>
+  <%= review.content %>
+<% end %>

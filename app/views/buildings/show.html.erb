@@ -31,19 +31,28 @@
 
 
   <div class="row">
-    <div class="col s6">
+    <!-- <div class="col s6"> -->
       <%= image_tag(@building.image, class: "image-tag") %>
-  </div>
+  <!-- </div> -->
 
+<div class="row">
+  <h5>Location:</h5><%= @building.location %>
+  <h5>Address:</h5><%= @building.full_street_address %>
+  <h5>Current Use:</h5><%= @building.use %>
+  <h5>Building Material:</h5><%= @building.material %>
+  <h5>Status:</h3><%= @building.status %>
+</div>
 
-<% @review.each do |review| %>
+<div id="reviews">
+  <h4>REVIEWS</h4>
+  <% @review.each do |review| %>
 <!--   <div class="field"><%= image_tag(review.image) %></div> -->
+    <!-- <div class="col s6 offset-s6 grid-example"> -->
+      <p><span class="flow-text" id="review-snippet"><%= truncate(review.content, length: 250) { link_to 'read more', building_review_path(@building, review) } %></span></p>
+      <hr>
+    <!-- </div> -->
+  <% end %>
+</div>
 
-  <div class="row">
-      <div class="col s6 offset-s6 grid-example"><span class="flow-text"><%= truncate(review.content, length: 500) { link_to 'read more', building_review_path(@building, review.id) } %></span>
-      </div>
-        </div>
-
-<% end %>
 
 

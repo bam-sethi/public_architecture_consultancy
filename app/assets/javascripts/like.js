@@ -6,7 +6,7 @@ $('img.like-button').on('click', function() {
 
   var url = "/buildings/" + buildingID  + "/suggestions/" + suggestionID + "/likes" 
   var element = $(this);
-
+  
   request('POST', url, null).done(function(response){
     $('li[data-building-id="' + buildingID +  '"][data-suggestion-id="' + suggestionID + '"] .likes').html(response.number_of_likes)
   })

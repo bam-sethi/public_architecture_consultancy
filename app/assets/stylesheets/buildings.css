@@ -57,7 +57,8 @@ input.waves-button-input {
 div .image-tag {
   display: inline-block;
   width: 45%;
-
+  margin: 2% 3% 2% 5%;
+  vertical-align: top;
 }
 
 div .image-building-show-page {
@@ -67,10 +68,21 @@ div .image-building-show-page {
 
 div .row {
   display: inline-block;
-  width: 45%;
+  width: 40%;
+  vertical-align: top;
+  margin: 2% 3% 2% 0%;
 }
 
 .nav-wrapper {
   background: black;
 }
 
+#review-snippet {
+  display: block;
+  margin: 3% 0%;
+  font-size: 17px;
+}
+
+#reviews {
+  margin: 0% 5%;
+}

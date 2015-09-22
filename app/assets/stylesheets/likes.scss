@@ -1,3 +1,42 @@
 // Place all the styles related to the Likes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#likes-list {
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin: 4% 0%;
+  padding: 0% 7%;
+}
+
+#individual-like {
+  margin-bottom: 5%;
+}
+
+#building-like {
+  vertical-align: top;
+  display: inline-block;
+  width: 30%;
+  margin-top: 4%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.building-like-image {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  /*width: 200px;*/
+}
+
+.like-button {
+  width: 40px;
+  height: 40px;
+}
+
+#like-bar {
+  display: block;
+}

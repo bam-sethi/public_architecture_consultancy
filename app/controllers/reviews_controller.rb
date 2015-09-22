@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
   
   def index
-    @review = Review.all.all.order('created_at DESC')
+    @review = Review.all.order('created_at DESC')
   end
 
 
@@ -26,7 +26,7 @@ class ReviewsController < ApplicationController
 
   def show 
     @building = Building.find(params[:id])
-    @review = @building.reviews
+    @reviews = @building.reviews
   end
 
 
