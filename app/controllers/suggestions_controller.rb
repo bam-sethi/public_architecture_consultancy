@@ -2,8 +2,9 @@ class SuggestionsController < ApplicationController
 
 
   def index
-    @suggestions = Suggestion.all
-
+    # @suggestions = Suggestion.all
+    @building = Building.find(params[:building_id])
+    @suggestions = Suggestion.where(building: @building)
   end
 
 

@@ -116,8 +116,8 @@ Apart from being reopened as a Museum of Finance Capitalism, where animatronic b
 s1 = Suggestion.create!(suggestion_content:'Should be blah', building_id: b1.id)
 s2 = Suggestion.create!(suggestion_content:'Should be a different kind of blah', building_id: b2.id)
 
-s1.likes.create!(number_of_likes: 3, building_id: b1.id)
-s2.likes.create!(number_of_likes: 5, building_id: b2.id)
+# s1.likes.create!(number_of_likes: 3, building_id: b1.id)
+# s2.likes.create!(number_of_likes: 5, building_id: b2.id)
 
 
 

@@ -114,6 +114,9 @@ $include-html-grid-classes: $include-html-classes;
 // $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
+$new-bg : rgba(193, 66, 66, 0.1);
+//$new-bg : "sky.jpg" no-repeat center center fixed;
+
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -124,7 +127,7 @@ $include-html-grid-classes: $include-html-classes;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
+$body-bg: $new-bg;
 // $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -1484,6 +1487,9 @@ $include-html-grid-classes: $include-html-classes;
 // $include-accessibility-classes: true;
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
+
+
+
 
 @import 'foundation';
 

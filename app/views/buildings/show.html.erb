@@ -1,5 +1,6 @@
 <h1>this is the show page</h1>
 <ul>
+<div class="field"><%= link_to 'SUGGESTIONS', building_suggestions_path(@building.id) %></div>
 <li><%= link_to 'Edit', edit_building_path(@building) %></li>
 <li><%= link_to 'Delete', @building, method: :delete, data: { confirm: "Are you sure?" } %></li>
 <li><%= link_to 'Add a Review', new_building_review_path(@building) %></li>
@@ -18,10 +19,6 @@
 <div class="field">  <%= review.content %></div>
 <div class="field"><%= image_tag(review.image) %></div>
 <div class="field"> <%= truncate(review.content, length: 300) { link_to 'read more', building_review_path(@building, review.id) } %></div>
-
-
-
-
 
 
 <% end %>

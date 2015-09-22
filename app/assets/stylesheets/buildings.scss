@@ -6,7 +6,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text_align: center; 
 }
+
 #map { 
   height: 500px;
        
@@ -16,12 +18,19 @@ body {
 }
 
 .cover-image{
-  width: 100px;
-  height: 300px;
+  width: 50px;
+  height: 50px;
 }
 
+.small-block-grid-4 {
+  border: 10px solid black;
+}
 
 .like-button {
   width: 70px;
   height: 70px;
+}
+
+.index-container {
+  border-bottom: 10px solid black;
 }

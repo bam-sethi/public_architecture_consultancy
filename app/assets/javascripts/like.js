@@ -1,36 +1,22 @@
-console.log('fghj')
+console.log('like.js');
 
 $('img.like-button').on('click', function() {
-  console.log('hi')
+  var buildingID = $(this).parent().data('building-id')
+  var suggestionID = $(this).parent().data('suggestion-id')
 
-  // console.log(this)
-  // var url = "/buildings/" + $("building-id").val()  + "/suggestions" 
-  // var data = null
+  var url = "/buildings/" + buildingID  + "/suggestions/" + suggestionID + "/likes" 
+  var element = $(this);
 
-  // request('POST', url, data).done(function(response){
-  //   $.each(response, function(response){
-  //     console.log('likes')
-  //   })
-  // })
-
+  request('POST', url, null).done(function(response){
+    $('li[data-building-id="' + buildingID +  '"][data-suggestion-id="' + suggestionID + '"] .likes').html(response.number_of_likes)
+  })
 })
-
-
-
-
-
-
-  // $.post('likes#create', function(response){
-  //   console.log(response,'response')
-
-
-
 
 function request(method, url, data){
-return $.ajax({
-  method: method,
-  url: url,
-  dataType: 'json',
-  data: data
-})
+  return $.ajax({
+    method: method,
+    url: url,
+    dataType: 'json',
+    data: data
+  })
 };

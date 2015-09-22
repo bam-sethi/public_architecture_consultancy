@@ -1,6 +1,6 @@
 class LikesController < ApplicationController
-  before_action :all_tasks, only: [:create]
-  respond_to :html, :js
+  
+  # respond_to :html, :js
 
 
   def new
@@ -10,12 +10,19 @@ class LikesController < ApplicationController
   end
 
   def create
-    # binding.pry
-    like = Like.new
+    building = Building.find(params[:building_id])
+    suggestion = Suggestion.find(params[:suggestion_id])
+    
+    like = Like.find_or_create_by(building_id: building.id, suggestion_id: suggestion.id)
+    like.number_of_likes += 1
+            
     if like.save
 
+      respond_to do |format|
+        format.json { render json: like }
+      end
     else
-
+      render building_suggestion_path(building, suggestion)
     end
   end
 

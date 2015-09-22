@@ -1,9 +1,16 @@
 <ul>
 <% @suggestions.each do |suggestion| %>
 
-<li><%= suggestion.suggestion_content %> | <%= image_tag("like.png", class: "like-button") %></li>
 
-<li class="building-id"><%= suggestion.building_id %></li>
+  <li data-building-id="<%= suggestion.building.id %>" data-suggestion-id="<%= suggestion.id %>"><%= image_tag(@building.image, class: "building-like-image") %><%= suggestion.suggestion_content %> | <%= image_tag("like.png", class: "like-button") %> | <span class="likes"><%= suggestion.number_of_likes %></span></li>
+
 <% end %>
 
 </ul>
+
+<!-- This links the like.js file for JUST this page -->
+<%= javascript_include_tag 'like' %>
+
+
+
+
