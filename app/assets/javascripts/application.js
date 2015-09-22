@@ -15,4 +15,5 @@
 
 // require turbolinks
 // require_tree .
-
+//= require materialize/extras/nouislider
+//= require materialize-sprockets

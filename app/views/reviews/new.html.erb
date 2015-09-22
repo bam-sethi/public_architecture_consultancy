@@ -1,29 +1,36 @@
 <h1>add a new review</h1>
 
 <%= form_for [@building, @review] do |form| %>
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content, size: "15x10" %>
+  
+<div class="row">
+
+      <div class="row">
+        <div class="input-field col s12">
+          <%= form.label :content,  html: {for: "textarea1"} %>
+          <%= form.text_area :content, html: {class: "materialize-textarea", id:"textarea1"}%>
+        </div>
+      </div>
+
+  <div class="row">
+    <div class="input-field col s6">
+      <%= form.label :image %></br></br>
+      <%= form.file_field :image %>
+    </div>
   </div>
 
 
+  <div class="row">
+    <div class="input-field col s6">
+      <%= form.label :rating %>
+      <%= form.text_field :rating %>
+    </div>
+  </div>
 
-<div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image %>
+
+    <%= form.submit 'NEW!', class: "review-submit", class: "waves-effect waves-light btn-large" %>
+
+
 </div>
-
-
-<div class="field">
-  <%= form.label :rating %>
-  <%= form.text_field :rating %>
-</div>
-
-<div class="action">
-    <%= form.submit 'New review' %>
-</div>
-
-
 <% end %>
 
 

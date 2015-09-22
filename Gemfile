@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-
+gem 'materialize-sass'
 gem 'geocoder'
 
 gem 'carrierwave'

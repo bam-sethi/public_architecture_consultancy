@@ -15,10 +15,14 @@
 
   <body>
 
-
-      <h1><%= link_to "CITYREVIIEWWW", buildings_path %></h1>
-      <h2><%= link_to 'MAP', map_path %></h2>
-       <h2><%= link_to 'Add a Building',  new_building_path %></h2> 
+  <nav>
+    <div class="nav-wrapper">
+    <ul>
+      <li><%= link_to "CITYREVIIEWWW", buildings_path %></li>
+      <li><%= link_to 'MAP', map_path %></li>
+    </ul>
+    </div>
+  </nav>
 
     <%= yield %>
 

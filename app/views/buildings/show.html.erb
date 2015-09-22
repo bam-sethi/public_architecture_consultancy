@@ -1,4 +1,4 @@
-<h1>this is the show page</h1>
+<!-- <h1>this is the show page</h1>
 
 <ul>
 <div class="field"><%= link_to 'SUGGESTIONS', building_suggestions_path(@building.id) %></div>
@@ -7,20 +7,42 @@
 <li><%= link_to 'Add a Review', new_building_review_path(@building) %></li>
 <li><%= link_to 'Add a Suggestion', new_building_suggestion_path(@building) %></li>
 </ul>
-<div class="field"><%= @building.status %></div>
-<div class="field"><%= @building.use %></div>
-<div class="image"><%= image_tag(@building.image, class: "image-tag") %></div>
-<div class="field"><%= @building.material %></div>
-<div class="field"><%= @building.architect %></div>
+ -->
 
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><%= link_to 'SUGGESTIONS', building_suggestions_path(@building.id) %></li>
+  <li><%= link_to 'Add a Review', new_building_review_path(@building) %></li>
+  <li><%= link_to 'Add a Suggestion', new_building_suggestion_path(@building) %></li>
+  <li><%= link_to 'Edit', edit_building_path(@building) %></li>
+  <li class="divider"></li>
+  <li><a href="#!"><%= link_to 'Delete', @building, method: :delete, data: { confirm: "Are you sure?" } %></li>
+</ul>
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">BLABLABUILDING</a>
+    <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">OPTIONS<i class="material-icons right"> </i></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <div class="row">
+    <div class="col s6">
+      <%= image_tag(@building.image, class: "image-tag") %>
+  </div>
 
 
 <% @review.each do |review| %>
-<div class="field"> <%= review.rating %></div>
-<div class="field">  <%= review.content %></div>
-<div class="field"><%= image_tag(review.image) %></div>
-<div class="field"> <%= truncate(review.content, length: 300) { link_to 'read more', building_review_path(@building, review.id) } %></div>
+<!--   <div class="field"><%= image_tag(review.image) %></div> -->
 
+  <div class="row">
+      <div class="col s6 offset-s6 grid-example"><span class="flow-text"><%= truncate(review.content, length: 500) { link_to 'read more', building_review_path(@building, review.id) } %></span>
+      </div>
+        </div>
 
 <% end %>
 

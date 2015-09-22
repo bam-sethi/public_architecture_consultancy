@@ -7,15 +7,18 @@
 #   Mayor.create(name: \'Emanuel\', city: cities.first)
 
 
-b1 = Building.create!(location: 'London Bridge', status: 'Almost a year after it opened at a cost of £500 million, the building’s only occupants are a restaurant on the 32nd floor and a viewing gallery on the upper five floors, which offers visitors stunning views of the capital for £25. Not a single office in the 26 floors devoted to business use has been rented.', use: 'mixed', image: 'http://19gntp3rhlaj2031ac3inj421akm.wpengine.netdna-cdn.com/wp-content/uploads/Jitesh-Patel-illustration-V2-The-Shard.jpg', material: '11,000 glass panels', architect: 'Renzo Piano', latitude:  0.0865, longitude: 51.5045, full_street_address: '32 London Bridge St, London SE1 9SG')
+b1 = Building.create!(location: 'London Bridge', status: 'Almost a year after it opened at a cost of £500 million, the building’s only occupants are a restaurant on the 32nd floor and a viewing gallery on the upper five floors, which offers visitors stunning views of the capital for £25. Not a single office in the 26 floors devoted to business use has been rented.', use: 'mixed', image: 'shard.jpg', material: '11,000 glass panels', architect: 'Renzo Piano', latitude:  0.0865, longitude: 51.5045, full_street_address: '32 London Bridge St, London SE1 9SG')
 
 
 
-b2 = Building.create!(location: 'Elephant and Castle', status: 'empty', use: 'none', image: 'https://i.imgur.com/OLrW8n7.png', material: 'wtf? glass and shit', architect: 'a hippo', longitude: 0.0865, latitude: 51.5045)
+b2 = Building.create!(location: 'Elephant and Castle', status: 'empty', use: 'none', image: 'strata.jpg', material: 'wtf? glass and shit', architect: 'a hippo', longitude: 0.0865, latitude: 51.5045)
 
-b3 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'https://www.randstad.co.uk/ugc/found/london-skyline/images/buildings/walkie-talkie.png', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
+b3 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'walkietalkie.jpg', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
 
 
+b4 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'cityhall.jpg', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
+b5 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'londoneye.jpg', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
+b6 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'gherkin.jpg', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
 
 
 b1.reviews.create!(content:'This tower is anarchy. It conforms to no planning policy. It marks no architectural focus or rond-point. It offers no civic forum or function, just luxury flats and hotels. It stands apart from the City cluster and pays no heed to its surrounding context in scale, materials or ground presence. It seems to have lost its way from Dubai to Canary Wharf.

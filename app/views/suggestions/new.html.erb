@@ -1,10 +1,15 @@
 <%= form_for [@building, @suggestion] do |f| %>
-
-  <div class="field"><%= f.label :suggestion_content %></div>
-  <div class="field"><%= f.text_area :suggestion_content %></div>
-
-  <div class="action">
-    <%= f.submit 'Add Suggestion' %>
+  <div class="row">
+      <div class="row">
+        <div class="input-field col s6">
+         <i class="material-icons prefix"></i>
+          <%= f.label :suggestion_content, html: {for: "icon_prefix2"}%>
+          <%= f.text_area :suggestion_content, html: { class: "materialize-textarea", id: "icon_prefix2"}  %>
+        </div>
+      </div>
   </div>
 
+  <%= f.submit 'ADD!', class: "review-submit", class: "waves-effect waves-light btn-large" %>
+
 <% end %>
+
