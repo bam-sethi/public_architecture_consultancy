@@ -1,6 +1,5 @@
-<h1>hi rview</h1>
-
-<div class="field"><%= @review %></div>
+<div class="review-field" id="review-all"><%= @review %>
 <% @reviews.each do |review| %>
-  <%= review.content %>
+  <p id="review-para"><%= review.content %></p>
 <% end %>
+</div>

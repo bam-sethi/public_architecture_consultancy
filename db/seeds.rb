@@ -7,18 +7,18 @@
 #   Mayor.create(name: \'Emanuel\', city: cities.first)
 
 
-b1 = Building.create!(location: 'London Bridge', status: 'Almost a year after it opened at a cost of £500 million, the building’s only occupants are a restaurant on the 32nd floor and a viewing gallery on the upper five floors, which offers visitors stunning views of the capital for £25. Not a single office in the 26 floors devoted to business use has been rented.', use: 'mixed', image: 'shard.jpg', material: '11,000 glass panels', architect: 'Renzo Piano', latitude:  0.0865, longitude: 51.5045, full_street_address: '32 London Bridge St, London SE1 9SG')
+b1 = Building.create!(location: 'London Bridge', status: '£500 million', use: 'mixed', image: 'shard.jpg', material: '11,000 glass panels', architect: 'Renzo Piano', latitude:  0.0865, longitude: 51.5045, full_street_address: '32 London Bridge St, London SE1 9SG')
 
 
+b2 = Building.create!(location: 'Elephant and Castle', status: '£113 million', use: 'Residential', image: 'strata.jpg', material: 'wtf? glass and shit', architect: 'BFLS/ A HIPPOPOTOMAUS', longitude: 0.0865, latitude: 51.5045, full_street_address: 'London Rd SE1 6JZ')
 
-b2 = Building.create!(location: 'Elephant and Castle', status: 'empty', use: 'none', image: 'strata.jpg', material: 'wtf? glass and shit', architect: 'a hippo', longitude: 0.0865, latitude: 51.5045)
-
-b3 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'walkietalkie.jpg', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
+b3 = Building.create!(location: 'Bank', status: '£200 million', use: 'Commercial', image: 'walkietalkie.jpg', material: 'Laser Glass', architect: 'Rafael Viñoly', longitude: -0.083611, latitude: 51.511389,full_street_address: "20 Fenchurch St, London EC3M 3BY")
 
 
-b4 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'cityhall.jpg', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
-b5 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'londoneye.jpg', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
-b6 = Building.create!(location: 'Bank', status: 'empty', use: 'none', image: 'gherkin.jpg', material: 'brick', architect: 'Piano', longitude: -0.083611, latitude: 51.511389)
+b4 = Building.create!(location: 'Southwark', status: '£43 million', use: 'City Hall', image: 'cityhall.jpg', material: 'glass and steak', architect: 'Norman Foster, Ken Shuttleworth, Max Neal', longitude: -0.083611, latitude: 51.511389, full_street_address: 'The Queen\'s Walk, London SE1 2AA')
+
+b5 = Building.create!(location: 'South Bank', status: '£70 million', use: 'Tourist Attraction', image: 'londoneye.jpg', material: 'brick', architect: 'Frank Anatole, Nic Bailey, Julia Barfield, Steve Chilton, Malcolm Cook, David Marks, Mark Sparrowhawk', longitude: -0.083611, latitude: 51.511389, full_street_address: 'River Thames')
+b6 = Building.create!(location: 'City of London', status: '£138 million (plus land cost of £90.6 million', use: 'Commercial', image: 'gherkin.jpg', material: 'bricks', architect: 'Foster and Partners', longitude: -0.083611, latitude: 51.511389, full_street_address: '30 St Mary Axe, London, EC3A 8EP')
 
 
 b1.reviews.create!(content:'This tower is anarchy. It conforms to no planning policy. It marks no architectural focus or rond-point. It offers no civic forum or function, just luxury flats and hotels. It stands apart from the City cluster and pays no heed to its surrounding context in scale, materials or ground presence. It seems to have lost its way from Dubai to Canary Wharf.
@@ -28,13 +28,13 @@ Some people find the Shard beautiful. I am sure I would in the Gulf, as I admire
 
 
 b1.reviews.create!(content: 'Will Self confesses to being dazzled by the skyscrapers that dominate urban skylines, but wonders if they have overshadowed visionary dreams of making cities better places to live.
-It was said of the French writer Guy de Maupassant that he ate dinner in the restaurant of the Eiffel Tower every night of the week, and when asked why, replied, \'Because it\'s the only place in Paris from where you can/\'t see the Eiffel Tower.\'
+It was said of the French writer Guy de Maupassant that he ate dinner in the restaurant of the Eiffel Tower every night of the week, and when asked why, replied, \'Because it\'s the only place in Paris from where you can/\'t see the Eiffel Tower.
 While this anecdote has the distinct whiff of too-good-to-be-true about it, I can assure you that my own peak perspective is 100% genuine.
 So taken am I by the spectacle of Renzo Piano\'s Shard lightsabering up into the London night, that I\'ve taken to sleeping in the spare room, from where I have a good view of this, currently the loftiest building in Western Europe. I even leave the blind up, so that when I wake in the small hours I can contemplate the Shard under different light and weather conditions.
 This is not, I hasten to assure you, because I think the building has any architectural merit whatsoever. Rather, with its catchy nickname, and gross simplification of form, it\'s just the latest exemplar of what the architectural critic Owen Hatherley has characterised as the boosterist cliche of creating structures that are simultaneously a logo and an icon.
-There\'s this, and there\'s also the ephemerality of the Shard. I have a friend who lives in a house in its shadow that was built in the 1600s, and given the 75-year specification of this scintillating spire and our proven capacity for doing away with large and recently-built buildings, I\'ve no doubt that his humble abode will still be there long after it has gone.
+There\'s this, and there\'s also the ephemerality of the Shard. I have a friend who lives in a house in its shadow that was built in the 1600s, and given the 75-year specification of this scintillating spire and our proven capacity for doing away with large and recently-built buildings, I\'ve no doubt that his humble abode will still be there long after it has gone. 
 Indeed, at New Year\'s Eve, standing on top of Brockwell Park in Brixton, and looking at the starbursts and glittery flak explode over the Thames while the London Eye was transformed into a gigantic Catherine wheel, it occurred to me that the contemporary metropolitan skyline is really only a fireworks display of decades-long duration. A burst of aerial illumination intended to provoke awe, but doomed, eventually, to subside into darkness.
-As it is to London, so it is to other British cities. Over the past 20 years a series of signature buildings has lanced up into heavens, forms that by day have the aspect of grossly enlarged desktop toys, but which by night resemble nothing so much as the over-lit rockets and gantries of some Cape Kennedy of the collective British psyche.
+As it is to London, so it is to other British cities. Over the past 20 years a series of signature buildings has lanced up into heavens, forms that by day have the aspect of grossly enlarged desktop toys, but which by night resemble nothing so much as the over-lit rockets and gantries of some Cape Kennedy of the collective British psyche. 
 It\'s as if our architects, civil engineers and urban planners were summoning us not to the dull confinement of the workaday, but to an exciting mass exodus, one in which we will all become colonists of the future. I say \'as if\' because, of course, these gleaming nacelles are no more the product of careful arrangement, or thoughtful dispensation, than the up-thrust finials and melting buttresses of a termite heap.
 
 Not, I\'m sure, that those who believe they\'re responsible for the character of our built environment would view it this way.
@@ -118,6 +118,87 @@ So what to do about these unfortunate towers? Worryingly, the competition for al
 
 Apart from being reopened as a Museum of Finance Capitalism, where animatronic brokers could yell at each other through concealed microphones and trading floors could be repurposed to exhibit the suffering of foreclosed home owners and  \'decanted \' council tenants, it/\'s hard to imagine any possible fate for it. Londoners will just have to put up with 20 Fenchurch Street, and theyll have to create some sort of instrument – legal or otherwise – to stop it from happening again. ')
 
+
+b4.reviews.create!(content: 'The building is great but inside lurks a great evil. Hidden by foppish buffoonery the London Mayor destroys all that we value with his blackened and withering claw.')
+
+b4.reviews.create!(content: 'Iconic building.... just had seafood linguine with braised red cabbage and rosemary roasted carrots, which sounds nicer than it was but for a shade under £5 in that part of London is surprisingly good value.... you are eating the office canteen food of the City Hall staff and paying the same prices.  Anyway, its worth a look just to catch the views from a different angle.')
+
+b2.reviews.create!(content: 'Nicknamed the ‘Razor’ or ‘Isengard’ by locals, this recently completed Elephant & Castle freakshow – part vibrator, part windmill – was a shoo-in for the 2010 Carbuncle Cup as the worst new building in Britain. The turbines in its roof – which according to architects BFLS were supposed to help power the building and its heating and air-conditioning systems – rarely seem to move, particularly since the penthousers began compaining about the noise and demanding them to be switched off at night. All in all, it’s 43 storeys of misery for lucky south Londoners.')
+b2.reviews.create!(content: 'At 480ft, the glass and steel Strata tower in Elephant & Castle is the tallest block of flats in the capital, dwarfing all neighbouring buildings.
+Strata tower in Elephant & Castle named ugliest new building of the year
+While those lucky enough to afford an apartment on the upper levels enjoy stunning views over the city, locals complain that the tower\'s disproportionate size and “bar code” colour scheme make it an unavoidable eyesore.
+The developers behind the tower have also been accused of environmental tokenism, after installing turbines in the roof to meet just eight per cent of the building’s energy needs.
+Ellis Woodman, the Telegraph architecture critic who led the judging panel, said that the Strata building was a damning indictment of town planning departments, describing it as “quite simply the worst tall building ever constructed in London”.
+He said: “Councils are meant to protect us from these buildings. How on earth did it win approval?
+“A skyscraper is an energy-greedy building form, both in terms of construction, and the power needed to take people to their front doors in a lift. To top one off with some wind turbines is the worst sort of greenwashing.”
+He added that the Strata building was awarded the Carbuncle Cup, an annual competition run by Building Design magazine, for “services to urban impropriety and breakfast-extracting ugliness')
+b3.reviews.create!(content: 'London’s Walkie Talkie building is reportedly throwing people into roads because its curvy shape is creating a wind tunnel.
+
+The downward draft problem isn’t a new one. But people have been complaining this week as the weather conditions changed – prompting the new name Walkie Windy.')
+b3.reviews.create!(content: "The Walkie talkie melted my carrrrrrrr! They’re going to have to think of something. I\’m gutted. How can they let this continue? The car was in the ray for just an hour but the panels were buckled and I could smell of burning plastic.")
+b3.reviews.create!(content: "Felt deceived & disappointed")
+
+b3.reviews.create!(content: "
+
+The celebrated Roman thinker Cicero suggested that unpopularity is sometimes earned by doing what is right. Well, luckily for Cicero he didn’t live long enough to see the Walkie Talkie built or else a major tenet of Western philosophy might well have been revised.
+
+As big surprises go, the Walkie Talkie winning the 2015 Carbuncle Cup is hardly up with there with a Donald Trump US presidential victory or England winning the next World Cup. Spontaneous unanimity has never been so effortlessly achieved as it was on this year’s judging panel. And rarely has a Carbuncle nominee been so wildly unpopular that it gathered a significant tranche of votes in the previous year’s contest.
+
+So why is the Walkie Talkie so unpopular and why did it win? Its tumescent imperfections have been much discussed on these pages and elsewhere. Height, scale, context, form, environmental impact, public realm, its crimes read like a furious police charge sheet of bad architecture and if anything summarises what makes a building a Carbuncle, this is it.
+
+But bad architecture alone is not to blame for the Walkie Talkie. Bad architects and bad architecture come and go but we are supposed to have a process in place that provides the ultimate check and balance against their worst excesses: the planning system. But here it failed woefully.
+
+How many architects have endured the familiar frustration of having minor planning applications refused on the grounds “overbearing scale” or “unacceptable detriment to local character”? And yet here we have the determining planning authority, shamefully supported by CABE, concluding that the proposals would cause “significant visual harm” and still granting permission. Inconsistency has always been a woeful component of the planning process but the extent to which it corrodes the entire system, as disastrously demonstrated by the Walkie Talkie, is a scandal of MPs’ expenses proportions.
+
+But of course if there is any one individual who must bear even more blame than Viñoly for the Walkie Talkie it is the City’s ex-planning chief Peter Rees. He may now be safely ensconced in the Bartlett inexplicably imperilling the next generation of urbanists but the unalloyed havoc he has helped wreak on London is there for all to see in the unfettered tall building free-for-all that has now erupted across the capital, an advent he was directly responsible for in the City but now has the temerity to bemoan beyond it.
+
+But, aggrieved as many rightly are over the Walkie Talkie, awards, even ones as cathartic and justly deserved as this one, are about the past. What matters is the future. So what does the Walkie Talkie suggest might be in store for London’s architectural quality, urban character and high-rise development?
+
+
+
+Painfully, the future looks very bleak. Four of this year’s Carbuncle finalists were in London and half were tall buildings, two of them in the capital. Last year, four of the shortlisted six were again in London, two of these, once again, were tall buildings.
+
+Like the ominous closing credits of an apocalyptic disaster film, the Walkie Talkie is merely the beginning not the end. Future carbuncles are mushrooming across the city at astonishing speed and with genetic variant Walkie Talkies slowly mutating across a ruined skyline from as far afield as Croydon, South Bank, Battersea, Bankside, Shoreditch and of course the wilfully unrepentant City, there might be a very real argument for establishing a London Carbuncle spin-off in the very near future.
+
+As the imbecilic preening on the facade of this year’s runner-up Parliament House indicates, crass, belligerent, mediocre and casually inept high-rise architecture is becoming tolerated and institutionalised in the capital at a rate not seen since the 1960s, particularly within London’s rampant residential development sector.
+
+So what is the planning response to this explosion? In the nine years since the Walkie Talkie was awarded permission, has the planning system learned from its mistakes? For your answer, observe for a moment the nonsensical verbiage that recently sprouted forth in two rare public pronouncements from two of the most powerful protagonists in London’s planning establishment.
+
+Gywn Richards, successor to Rees at the City, explains that the replacement designs for the famously stumped Pinnacle represent a “more disciplined approach… no building in the cluster should be trying to shout down its neighbour”. Quite how a 278m glass mortuary slab that is almost three times as wide as the M25 can be presented as an exercise in contextual conciliation would probably tax even Cicero. 
+
+And even worse, according to GLA planning chief Edward Lister “tall buildings help meet the challenge of a growing city… protecting the things we value most about our city while helping us meet the challenges of growth”.
+
+An enterprising reception age pupil with even a passing interest in the built environment would be able to demolish these arguments with ease. Does Lister genuinely consider “growth” to be the proliferation of a phalanx of gaudy luxury towers that further impoverish the economic prospects of the vast majority of Londoners and gravely destabilise the precious urban character that makes the city unique? That this is the level of intellectual application being commonly exercised by the senior planning custodians of one of the world’s greatest historic cities is terrifying.
+
+The simple but unavoidable fact is that London will carry on building more and more Walkie Talkies until it establishes a coherent, strategic planning policy framework that guides the development of tall buildings, prioritises genuine high-quality high-rise architecture and encapsulates a clear vision for what the city is and how tall buildings can be progressed without harm to its all-important historic fabric and urban character.
+
+Until that happens, London as a whole will suffer and the City of London in particular will continue to resemble an indignant teen who, banned from a sweet shop frequented by its younger peers, spends so much time with its nose longingly pressed up against the window of Canary Wharf and Dubai that it not only fogs up the glass but entirely addles its senses.
+
+The Walkie Talkie may be the just winner of this year’s Carbuncle Cup. But the real victory goes to all those seeking conclusive evidence that the broken planning system that spawned it is entirely unfit for purpose.")
+
+ 
+b5.reviews.create!(content:"Hi folks what is there to see a few old buildings and a dirty river get a life city folk go to the country side more to see and do. Nothing in a city for me .")
+
+b5.reviews.create!(content:"I went when it was cloudy and didnt see too much.  Im sure it would be better when the sun is shining.")
+
+
+b1.reviews.create!(content:"There’s no better display of wealth than throwing millions of pounds at a great fucking tower of concrete and glass. In fact, it feels like we hear plans for a new corporate skyscraper every month, each one an opportunity for a handful of investors to thrust their financial brawn into the clouds, competing with all the capital's other phallic eyesores for our indifference.  
+
+I wanted to talk to someone about London's architecture and how it's been affected by the arrogance of wealth, so I got in touch with the eminent design critic Stephen Bayley, who once spent a few months as the creative director of the Millennium Dome but left in dismay at the chaos that surrounded him.
+
+Bayley’s hero – the Victorian art critic John Ruskin – once said, “There is no wealth but life.” However, it seems – in London, at least – there is no wealth but wealth. More and more of the capital is taken up by private land and the skyline is beginning to be dominated by private interests.
+
+I met Bayley in Soho, and once he’d broken a glass of wine on me we talked about the changing face of London.
+Hi Stephen. I think the Millennium Dome is a good place to start, because I was thinking about big building projects that were publicly funded or were meant to have some sort of public benefit, and it’s one of the last ones I can think of. And, of course, it wasn’t successful until a mobile phone company got involved.
+Stephen Bayley: Well, they didn’t actually take it over; they had to build something else inside it. It’s not a dome, of course, it’s a tent. But New Labour required it be a dome with all the aggrandising associations of the Vatican and Jerusalem. I enthusiastically accepted the challenge and totally underestimated the scope for political bollocks that was going to follow. It was a great idea, but I’m vaguely sceptical about whether any such project would work.
+
+Having said that, I had an exchange – this is the most appalling, chunking name-dropping, but it’s true – with Martin Rees, the Astronomer Royal, the other day. He said a wonderful, simple thing to me. It’s that if, a century ago, he were looking at the London skyline, everything that would have punctuated the horizon would have had some kind of public utility or symbolism. And now you look around and they’re symbols of arrogance and greed. Simple, large things representing simple, crude ideas. We’ve lost the kind of common good in projects, which is why the Millennium Dome, in principle, was a great idea. It was utterly flawed in execution, though, because of lowbrow politicking.
+
+Do you think, when we look at these buildings, that we have some kind of inherent sense of the fact that they’re flawed in this way? I'm thinking of The Shard in particular.
+The Shard is a stupid building. I’m not against it because it’s tall, although I don’t particularly like tall buildings. Height is a crude way to achieve economic efficiencies. You can make them more efficient in other ways and still meet your commercial needs. The Shard is annoying because it’s so unintelligent, energy-squandering and inflexible. Even though it’s a 21st century building, it’s conceptually a mid-20th century building… it’s just a big ugly Qatari fuck you.")
+
+
+b6.reviews.create!(content:"")
 
 s1 = Suggestion.create!(suggestion_content:'Should be blah', building_id: b1.id)
 s2 = Suggestion.create!(suggestion_content:'Should be a different kind of blah', building_id: b2.id)
