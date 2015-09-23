@@ -1,12 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: \'Chicago\' }, { name: \'Copenhagen\' }])
-#   Mayor.create(name: \'Emanuel\', city: cities.first)
-
-
 b1 = Building.create!(location: 'London Bridge', status: '£500 million', use: 'mixed', image: 'shard.jpg', material: '11,000 glass panels', architect: 'Renzo Piano', latitude:  0.0865, longitude: 51.5045, full_street_address: '32 London Bridge St, London SE1 9SG')
 
 
@@ -203,7 +194,7 @@ Do you think, when we look at these buildings, that we have some kind of inheren
 The Shard is a stupid building. I’m not against it because it’s tall, although I don’t particularly like tall buildings. Height is a crude way to achieve economic efficiencies. You can make them more efficient in other ways and still meet your commercial needs. The Shard is annoying because it’s so unintelligent, energy-squandering and inflexible. Even though it’s a 21st century building, it’s conceptually a mid-20th century building… it’s just a big ugly Qatari fuck you.")
 
 
-b6.reviews.create!(content:"")
+# b6.reviews.create!(content:"")
 
 s1 = Suggestion.create!(suggestion_content:'Should be a public library', building_id: b1.id)
 s2 = Suggestion.create!(suggestion_content:'Dynamite it', building_id: b2.id)

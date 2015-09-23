@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :suggestions do
       resources :likes, only: [:create]
     end
+    
   end
 
 
