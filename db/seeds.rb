@@ -1,4 +1,4 @@
-b1 = Building.create!(location: 'London Bridge', status: '£500 million', use: 'mixed', image: 'shard.jpg', material: '11,000 glass panels', architect: 'Renzo Piano', latitude:  0.0865, longitude: 51.5045, full_street_address: '32 London Bridge St, London SE1 9SG')
+b1 = Building.create!(location: 'London Bridge', status: '£500 million', use: 'mixed', image: 'shard.jpg', material: '11,000 glass panels', architect: 'Renzo Piano', latitude:  0.0865, longitude: 51.5045, full_street_address: '32 London Bridge St, London SE1 9SG')  
 
 
 b2 = Building.create!(location: 'Elephant and Castle', status: '£113 million', use: 'Residential', image: 'strata.jpg', material: 'wtf? glass and shit', architect: 'BFLS/ A HIPPOPOTOMAUS', longitude: 0.0865, latitude: 51.5045, full_street_address: 'London Rd SE1 6JZ')

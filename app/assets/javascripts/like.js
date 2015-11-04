@@ -12,6 +12,7 @@ $('img.like-button').on('click', function() {
   
 //post request, add html to view
 // controller incrementing with each click
+//response is
   request('POST', url, null).done(function(response){
     $('li[data-building-id="' + buildingID +  '"][data-suggestion-id="' + suggestionID + '"] .likes').html(response.number_of_likes)
   })

@@ -16,7 +16,7 @@ class LikesController < ApplicationController
     like.number_of_likes += 1
             
     if like.save
-
+ 
       respond_to do |format|
         format.json { render json: like }
       end
