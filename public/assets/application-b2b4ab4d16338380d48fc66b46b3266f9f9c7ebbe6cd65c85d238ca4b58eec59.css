@@ -1,0 +1,186 @@
+body {
+  width: 100%;
+  color: darkgrey;
+  background: rgb(220,220,220);
+  background: url("grid.png");
+}
+
+
+#map { 
+  height: 500px;
+       
+}
+.field {
+  background-color: rgba(41, 203, 92, 0.1);
+}
+
+/*Index Page Buildings Display*/
+.small-block-grid-4 {
+/*  border: 1px solid black;*/
+  display: inline-block;
+  width: 100%;
+/*  overflow: hidden;
+  height:200px;*/
+}
+
+.buildings-li{
+  display: inline-block;
+  width: 20%;
+  border-bottom: 10px solid black;
+}
+.building-image{
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: -10px;
+/*  padding-bottom: -10px;*/
+  padding: 10px 10px 10px 10px; 
+}
+/*Review NEw FOrm Page*/
+/*.review-submit {
+  background-color: green;
+
+}*/
+input.waves-button-input {
+  border-style: none;
+  background-color: transparent;
+  font-size: 22px;
+}
+
+div .image-tag {
+  display: inline-block;
+  width: 45%;
+  margin: 2% 3% 2% 5%;
+  vertical-align: top;
+}
+
+div .image-building-show-page {
+  display: inline-block;
+  width: 20px;
+}
+
+div .row {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin: 2% 3% 2% 0%;
+}
+
+.nav-wrapper {
+  background: black;
+}
+
+#review-snippet {
+  display: block;
+  margin: 3% 0%;
+  font-size: 17px;
+}
+
+#reviews {
+  margin: 0% 5%;
+}
+#nav {
+  display: inline-block;
+  padding-left: 100px;
+  padding-right: 50px;
+  background-color: transparent;
+}
+#nav-container {
+  background-color: transparent;
+  margin: 10px;
+  border-bottom: 1px solid black;
+
+}
+.input-field label {
+  color: black;
+}
+
+h5 {
+  color: #708090;
+}
+.nav-link {
+  color: #2F4F4F;
+  font-size: 16px;
+
+}
+.nav-link:hover {
+  color: hotpink;
+}
+
+
+#likes-list {
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin: 4% 0%;
+  padding: 0% 7%;
+}
+
+#individual-like {
+  margin-bottom: 5%;
+}
+
+#building-like {
+  vertical-align: top;
+  display: inline-block;
+  width: 30%;
+  margin-top: 4%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.building-like-image {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  /*width: 200px;*/
+}
+
+.like-button {
+  width: 40px;
+  height: 40px;
+}
+
+#like-bar {
+  display: block;
+}
+#review-all {
+  margin: 8% 8% 10% 8%;
+  font-size: 15px;
+}
+#suggestion-link{
+  background-color: hotpink;
+}
+
+.likes{
+  color:rgb(178,34,34);
+  font-size: 30px;
+  float: middle;
+}
+
+#likes-list{
+  color:rgb(250,128,114);
+  font-size: 25px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+ 
+@import "materialize";
+@import "materialize/extras/nouislider";
