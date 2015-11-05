@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20150921094447) do
   create_table "likes", force: :cascade do |t|
     t.integer  "building_id"
     t.integer  "suggestion_id"
-    t.integer  "number_of_likes",             default: 0
+    t.integer  "number_of_likes", default: 0
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
   end
