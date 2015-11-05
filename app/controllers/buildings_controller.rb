@@ -11,7 +11,6 @@ class BuildingsController < ApplicationController
     building = Building.new(building_params)
     
     if building.save
-      # binding.pry    
       flash[:notice] = 'building created successfully!'
       redirect_to building
     else

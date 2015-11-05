@@ -12,7 +12,7 @@ function initMap() {
 var buildings = [
   ['The Shard',  51.504444, -0.086667, 4],
   ['The Walkie Talkie', 51.511389, -0.083611, 5],
-  ['Strata', 51.49450, -0.099973, 3]
+  ['Strata', 51.49450, -0.099973, 3],
 ];
 
 function setMarkers(map) {
