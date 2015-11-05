@@ -14,14 +14,21 @@ This is a Rails app that hosts reviews of mostly new architectural developments 
 I really enjoyed this Project, Rails gives you the opportunity to build something substantial with lots of different features. I found it fun and challenging moving between Ruby logic and JavaScript logic. I got see how useful Ruby on Rails can be for doing quick prototyping to longer term projects.
 
 The Build
-----------
+
 RESTful Routes
+
 Ruby on Rails
+
 Active Record
+
 AJAX
+
 JQuery
+
 Materialize CSS
+
 Ruby Gems - Carrier Wave, Debugging Gems
+
 AWS
 
 TrelloBoard- https://trello.com/b/54OrNgxa/public-architecture-consultancy
