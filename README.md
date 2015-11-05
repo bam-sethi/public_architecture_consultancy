@@ -33,5 +33,11 @@ Materialize CSS
 Ruby Gems - Carrier Wave, Debugging Gems
 
 AWS
+_____________________________________________________
+TrelloBoard- 
+https://trello.com/b/54OrNgxa/public-architecture-consultancy
 
-TrelloBoard- https://trello.com/b/54OrNgxa/public-architecture-consultancy
+Heroku-
+
+
+
