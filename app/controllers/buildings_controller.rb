@@ -42,7 +42,7 @@ class BuildingsController < ApplicationController
   def destroy
     building = Building.find(params[:id]).destroy
 
-    redirect_to building_path
+    redirect_to root_path
   end
 
   private
