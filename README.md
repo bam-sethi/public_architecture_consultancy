@@ -3,7 +3,7 @@ Public Architecture Forum
 
 This is the second project I did as part of my Web Development Course at General Assembly. The idea was to let users talk about the city they live in through its buildings. 
 
-See it on Heroku-http://serene-inlet-4537.herokuapp.com/buildings/
+See it on Heroku @ [PublicArchitectureForum](http://serene-inlet-4537.herokuapp.com/buildings/)  
 
 What is it?
 -----------
