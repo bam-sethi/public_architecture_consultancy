@@ -3,6 +3,8 @@ Public Architecture Forum
 
 This is the second project I did as part of my Web Development Course at General Assembly. The idea was to let users talk about the city they live in through its buildings. 
 
+See it on Heroku @ [PublicArchitectureForum](http://serene-inlet-4537.herokuapp.com/buildings/) 
+If Heroku is sleeping you can wake it up with [MetaPinger](http://metapinger.herokuapp.com/)
 
 What is it?
 -----------
@@ -37,7 +39,7 @@ _____________________________________________________
 TrelloBoard- 
 https://trello.com/b/54OrNgxa/public-architecture-consultancy
 
-Heroku-
+
 
 
 
